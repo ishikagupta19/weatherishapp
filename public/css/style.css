@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --main-bg: #1e272e ;
+    --main-color: #003a57 ;
+    
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    margin: 0;
+}
+.main_menu{
+    background-color: var(--main-bg);
+    
+}
+.bgimg{
+     background-image: url("/Untitled design (3).png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.navbar{
+    color: #fff;
+    background-color: var(--main-color);
+    padding: 1.2rem 0;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+}
+
+.navbar li{
+    margin-left: 20px;
+}
+
+.navbar a{
+    color: azure;
+    font-size: 1.3rem;
+}
+
+.navbar a:hover{
+    color: #66fff5;
+}
+
+.navbar-toggler{
+    background-color: rgb(88, 161, 158);
+  
+
+}
+
+footer{
+    width: 100%;
+    display: flex; 
+    margin-top: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #e0e5ec;
+}
+
+footer p{
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.frame{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px; width: 320px;
+  position: relative;
+   box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001,
+   inset 0px 0px 0px 0px #fff9,
+   inset 0px 0px 0px 0px #0001,
+   inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001;
+ transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
+   border-radius: 10px;
+}
+.btn{
+  height: 35px; width: 35px;
+  border-radius: 3px;
+  background: #e0e5ec;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001,
+   inset 0px 0px 0px 0px #fff9,
+   inset 0px 0px 0px 0px #0001,
+   inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001;
+ transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
+  font-size: 16px;
+  color: rgba(42, 52, 84, 1);
+  text-decoration: none;
+}
+.btn:active{
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.5),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+}
+
+.main_header_left{
+  
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.main_header_leftt{
+    color: #fff;
+    height: 70rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_header_leftt p{
+    font-size: 4rem;
+}
+
+.main_header_leftt h1{
+    font-size: 8rem;
+    margin: 1rem 0 3.8rem 0;
+
+}
+
+.main_header_leftt h2{
+    font-size: 4.6rem;
+    margin: 1rem 0 3.8rem 0;
+
+}
+
+.main_header_leftt button{
+    border: none;
+    padding: 0.8rem 1.8rem;
+    font-size: 1.4rem;
+    border-radius: 2rem;
+    box-shadow: 0 8px 6px -6px #000;
+    outline: none;
+}
+
+.main_header_leftt button:hover{
+    box-shadow: 0 8px 6px -6px var(--main-color);
+}
+
+.main_header_left p{
+    font-size: 2rem;
+}
+
+.main_header_left h1{
+    font-size: 4rem;
+    margin: 1rem 0 3.8rem 0;
+
+}
+
+.main_header_left button{
+    border: none;
+    padding: 0.8rem 1.8rem;
+    font-size: 1.4rem;
+    border-radius: 2rem;
+    box-shadow: 0 8px 6px -6px #000;
+    outline: none;
+}
+
+.main_header_left button:hover{
+    box-shadow: 0 8px 6px -6px var(--main-color);
+}
+
+.main_header_right{
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.main_header_right figure img{
+    filter: drop-shadow(0 0.5rem 1rem rgba(27, 183, 160, 0.3));
+}
+
+/*temperature input field*/
+
+.temp_form{
+    width: 60%;
+    position: relative;
+    margin: 10rem auto 6rem;
+}
+
+.temp_form input[type="text"] {
+ width: 100%;
+ padding: 2rem 5rem 2rem 2rem;
+ background: #1e202b;
+ color: #fff;
+ outline: none;
+ border: none;
+ font-size: 1.7rem;
+ border-radius: 3rem;
+}
+::placeholder {
+    color: #bfc1c8;
+}
+
+.temp_form input[type="submit"] {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: none;
+    background: #009ad8;
+    padding: 0 3rem;
+    border-radius: 3rem;
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.temp_form input[type="submit"]:hover{
+    color: #009ad8;
+    background-color: #fff;
+}
+
+/*temperature details shown here */
+
+.tempInformations{
+    width: 50rem;
+   
+    min-height: 20rem;
+    background-color: #323544;
+    border-radius: 1rem;
+    margin: 5rem auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.top_layer{
+    width: 100%;
+    height: 20%;
+    background-color: #2d303d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.top_layer p{
+    color: #fff;
+    font-weight: 300;
+    padding: 2rem ;
+    font-size: 1.4rem;
+}
+
+.main_layer{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem ;
+}
+
+.main_layer #city_name{
+    padding: 2rem 0;
+    color: #bfc1c9;
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.main_laye .middle_layer{
+    display: flex;
+
+    justify-content: space-around;
+    color: #fff;
+}
+
+.main_layer .middle_layer p,
+.main_layer .middle_layer .fa {
+   
+    color: #fff;
+    font-size: 5rem;
+    
+    font-weight: 900;
+}
+
+.fa{
+    color: #009ad8;
+}
+
+sup{
+    font-size: 4rem;
+    margin-top: -2rem;
+}
+
+.data_hide{
+    visibility: hidden;
+    transition: all 0.3s linear;
+}
+
+.main_header_left .text_clr{
+    color: rgb(20, 1, 87);
+    font-weight: bolder;
+}
+
+@media (max-width: 768px){
+    .main_header_left{
+        height: auto;
+        margin: 5rem 0;
+    }
+    .main_header_right{
+        height: auto;
+        margin-top: 3rem ;
+    }
+
+    .temp_form{
+        width: auto;
+    }
+
+    .tempInformations{
+        width: auto;
+    }
+}
